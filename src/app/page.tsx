@@ -1,10 +1,10 @@
-import { Search, ShieldCheck, Settings, Building2, HeadphonesIcon, Award, Box, Truck, ArrowRight, Gem, Phone, Mail, MapPin, FileText, ChevronLeft, ChevronRight, Users, CheckCircle, Package, Star } from "lucide-react";
+import { Search, ShieldCheck, Settings, Building2, HeadphonesIcon, Award, Box, Truck, ArrowRight, Gem, Phone, Mail, MapPin, FileText, ChevronLeft, ChevronRight, Users, CheckCircle, Package, Star, MessageCircle, ChevronUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main id="top">
       {/* Top Bar */}
       <div className="top-bar">
         <div className="container top-bar-container">
@@ -34,7 +34,6 @@ export default function Home() {
             <Link href="#about">About Us</Link>
             <Link href="#products">Products</Link>
             <Link href="#brands">Brands</Link>
-            <Link href="#applications">Applications</Link>
             <Link href="#contact">Contact Us</Link>
           </nav>
 
@@ -219,6 +218,8 @@ export default function Home() {
             {/* Right Image */}
             <div style={{ height: '400px', position: 'relative', borderRadius: '12px', overflow: 'hidden' }}>
               <Image src="/products_showcase.jpg" alt="Industrial Facility" fill style={{ objectFit: 'cover' }} />
+              
+
             </div>
             
           </div>
@@ -226,34 +227,66 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="why-choose-us" style={{ padding: '5rem 0', background: '#f8fafc' }}>
+      <section className="why-choose-section">
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 3rem' }}>
-            <span style={{ fontSize: '0.85rem', color: '#3b82f6', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 'bold' }}>Our Strengths</span>
-            <h2 style={{ fontSize: '2.5rem', color: '#0f172a', margin: '1rem 0' }}>Why Choose SP Enterprises?</h2>
-            <p style={{ color: '#64748b' }}>We combine decades of industry expertise with top-tier product lines to provide unmatched value for your automation and control needs.</p>
+          <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 4rem' }}>
+            <div className="title-label-wrapper">
+              <div className="title-label-line"></div>
+              <span className="title-label-text">Our Strengths</span>
+              <div className="title-label-line"></div>
+            </div>
+            <h2 className="why-choose-title">Why Choose <span>SP Enterprises?</span></h2>
+            <p style={{ color: '#64748b', fontSize: '1.05rem', lineHeight: '1.6' }}>We combine decades of industry expertise with top-tier product lines to provide unmatched value for your automation and control needs.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
              {/* 4 Feature cards */}
-             <div style={{ background: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', textAlign: 'center' }}>
-               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb', margin: '0 auto 1.5rem' }}><Award size={28}/></div>
-               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#0f172a' }}>Authorized Dealer</h3>
-               <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.6' }}>Direct channel partner for leading global brands, ensuring 100% genuine and authentic products.</p>
+             <div className="strength-card">
+               <div className="strength-card-number">01</div>
+               <div className="strength-icon-container">
+                 <Image src="/icon_award.jpg" alt="Authorized Dealer" width={120} height={120} className="strength-icon-img" />
+               </div>
+               <h3>Authorized Dealer</h3>
+               <p>Direct channel partner for leading global brands, ensuring 100% genuine and authentic products.</p>
+               <div className="strength-card-footer">
+                 <div className="strength-action-btn"><ArrowRight size={16} /></div>
+                 <div className="strength-action-line"></div>
+               </div>
              </div>
-             <div style={{ background: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', textAlign: 'center' }}>
-               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb', margin: '0 auto 1.5rem' }}><Package size={28}/></div>
-               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#0f172a' }}>Vast Inventory</h3>
-               <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.6' }}>Comprehensive stock of SSRs, I/O modules, and control accessories ready for immediate dispatch.</p>
+             <div className="strength-card">
+               <div className="strength-card-number">02</div>
+               <div className="strength-icon-container">
+                 <Image src="/icon_inventory.jpg" alt="Vast Inventory" width={120} height={120} className="strength-icon-img" />
+               </div>
+               <h3>Vast Inventory</h3>
+               <p>Comprehensive stock of SSRs, I/O modules, and control accessories ready for immediate dispatch.</p>
+               <div className="strength-card-footer">
+                 <div className="strength-action-btn"><ArrowRight size={16} /></div>
+                 <div className="strength-action-line"></div>
+               </div>
              </div>
-             <div style={{ background: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', textAlign: 'center' }}>
-               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb', margin: '0 auto 1.5rem' }}><Settings size={28}/></div>
-               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#0f172a' }}>Technical Expertise</h3>
-               <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.6' }}>Deep application knowledge to help you select the exact components for your specific industrial requirements.</p>
+             <div className="strength-card">
+               <div className="strength-card-number">03</div>
+               <div className="strength-icon-container">
+                 <Image src="/icon_expertise.jpg" alt="Technical Expertise" width={120} height={120} className="strength-icon-img" />
+               </div>
+               <h3>Technical Expertise</h3>
+               <p>Deep application knowledge to help you select the exact components for your specific industrial requirements.</p>
+               <div className="strength-card-footer">
+                 <div className="strength-action-btn"><ArrowRight size={16} /></div>
+                 <div className="strength-action-line"></div>
+               </div>
              </div>
-             <div style={{ background: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.03)', textAlign: 'center' }}>
-               <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb', margin: '0 auto 1.5rem' }}><HeadphonesIcon size={28}/></div>
-               <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#0f172a' }}>Dedicated Support</h3>
-               <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.6' }}>Reliable pre-sales consultation and robust after-sales support to ensure your operations run smoothly.</p>
+             <div className="strength-card">
+               <div className="strength-card-number">04</div>
+               <div className="strength-icon-container">
+                 <Image src="/icon_support.jpg" alt="Dedicated Support" width={120} height={120} className="strength-icon-img" />
+               </div>
+               <h3>Dedicated Support</h3>
+               <p>Reliable pre-sales consultation and robust after-sales support to ensure your operations run smoothly.</p>
+               <div className="strength-card-footer">
+                 <div className="strength-action-btn"><ArrowRight size={16} /></div>
+                 <div className="strength-action-line"></div>
+               </div>
              </div>
           </div>
         </div>
@@ -422,7 +455,6 @@ export default function Home() {
               <Link href="#about" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '0.5rem' }}>About Us <ChevronRight size={14} color="#3b82f6" /></Link>
               <Link href="#products" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '0.5rem' }}>Products <ChevronRight size={14} color="#3b82f6" /></Link>
               <Link href="#brands" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '0.5rem' }}>Brands <ChevronRight size={14} color="#3b82f6" /></Link>
-              <Link href="#applications" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '0.5rem' }}>Applications <ChevronRight size={14} color="#3b82f6" /></Link>
               <Link href="#downloads" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '0.5rem' }}>Downloads <ChevronRight size={14} color="#3b82f6" /></Link>
               <Link href="#contact" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '0.5rem' }}>Contact Us <ChevronRight size={14} color="#3b82f6" /></Link>
             </div>
@@ -489,6 +521,20 @@ export default function Home() {
         </div>
       </footer>
       
+      {/* Floating Action Buttons */}
+      <div className="floating-actions">
+        <a href="https://wa.me/918308502100" target="_blank" rel="noopener noreferrer" className="float-btn float-whatsapp" title="Chat on WhatsApp">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+        </a>
+        <a href="tel:+918308502100" className="float-btn float-call" title="Call Us">
+          <Phone size={26} />
+        </a>
+        <a href="#top" className="float-btn float-top" title="Scroll to Top">
+          <ChevronUp size={24} />
+        </a>
+      </div>
     </main>
   );
 }
