@@ -1,4 +1,4 @@
-import { Search, ShieldCheck, Settings, Building2, HeadphonesIcon, Award, Box, Truck, ArrowRight, Gem, Phone, Mail, MapPin, FileText, ChevronLeft, ChevronRight, Users, CheckCircle, Package, Star, MessageCircle, ChevronUp } from "lucide-react";
+import { Search, ShieldCheck, Settings, Building2, HeadphonesIcon, Award, Box, Truck, ArrowRight, Gem, Phone, Mail, MapPin, FileText, ChevronLeft, ChevronRight, Users, CheckCircle, Package, Star, MessageCircle, ChevronUp, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,11 +9,17 @@ export default function Home() {
       <div className="top-bar">
         <div className="container top-bar-container">
           <div className="top-bar-left">
-            <span className="top-bar-item"><Phone size={14} /> +91 22 1234 5678</span>
-            <span className="top-bar-item"><Mail size={14} /> sales@spenterprises.in</span>
-            <span className="top-bar-item"><MapPin size={14} /> Mumbai, India</span>
+            <span className="top-bar-item"><Phone size={14} /> +91 83085 02100</span>
+            <span className="top-bar-item"><Mail size={14} /> Spe.mktg@gmail.com</span>
+            <span className="top-bar-item"><MapPin size={14} /> Pune, Maharashtra</span>
           </div>
           <div className="top-bar-right">
+            <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', borderRight: '1px solid rgba(255,255,255,0.2)', paddingRight: '1rem' }}>
+              <a href="#" className="top-bar-link" style={{ padding: '0' }}><Linkedin size={14} /></a>
+              <a href="#" className="top-bar-link" style={{ padding: '0' }}><Youtube size={14} /></a>
+              <a href="#" className="top-bar-link" style={{ padding: '0' }}><Facebook size={14} /></a>
+              <a href="#" className="top-bar-link" style={{ padding: '0' }}><Instagram size={14} /></a>
+            </div>
             <a href="#download" className="top-bar-link"><FileText size={14} /> Download Catalogue</a>
             <a href="#quote" className="top-bar-link"><Mail size={14} /> Request a Quote</a>
           </div>
