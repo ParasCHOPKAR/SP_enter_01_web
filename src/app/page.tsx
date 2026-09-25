@@ -388,21 +388,21 @@ export default function Home() {
                   <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb', flexShrink: 0 }}><MapPin size={20}/></div>
                   <div>
                     <h4 style={{ fontSize: '1rem', color: '#0f172a', marginBottom: '0.3rem' }}>Corporate Office</h4>
-                    <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.5' }}>Sr. No. 14/1A +2B/2, Gujarwadi Road,<br/>Katraj, Pune - 411046 (India)</p>
+                    <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.5' }}>S. P. Enterprises, Sr. No. 14/1A + 2B/2, Near Gujarwadi,<br/>Mangdewadi, Katraj, Pune 411046, Maharashtra</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '1rem' }}>
                   <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb', flexShrink: 0 }}><Phone size={20}/></div>
                   <div>
                     <h4 style={{ fontSize: '1rem', color: '#0f172a', marginBottom: '0.3rem' }}>Call Us</h4>
-                    <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.5' }}>+91 8308502100<br/>Contact Person: Pradeep Kulkarni</p>
+                    <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.5' }}>+91 83085 02100</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '1rem' }}>
                   <div style={{ width: '40px', height: '40px', borderRadius: '8px', background: '#eff6ff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#2563eb', flexShrink: 0 }}><Mail size={20}/></div>
                   <div>
                     <h4 style={{ fontSize: '1rem', color: '#0f172a', marginBottom: '0.3rem' }}>Email Us</h4>
-                    <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.5' }}>spe@sahpl.com</p>
+                    <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: '1.5' }}>Spe.mktg@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -434,15 +434,15 @@ export default function Home() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div className="circle-icon" style={{ width: '36px', height: '36px', borderRadius: '50%', background: '#1e293b', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6', flexShrink: 0 }}><Phone size={16}/></div>
-                <div style={{ fontSize: '0.8rem', lineHeight: '1.4' }}><span style={{color: '#94a3b8'}}>Call Us</span><br/><strong style={{fontSize: '1rem', color: 'white'}}>+91 8308502100</strong></div>
+                <div style={{ fontSize: '0.8rem', lineHeight: '1.4' }}><span style={{color: '#94a3b8'}}>Call Us</span><br/><strong style={{fontSize: '1rem', color: 'white'}}>+91 83085 02100</strong></div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div className="circle-icon" style={{ width: '36px', height: '36px', borderRadius: '50%', background: '#1e293b', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6', flexShrink: 0 }}><Mail size={16}/></div>
-                <div style={{ fontSize: '0.8rem', lineHeight: '1.4' }}><span style={{color: '#94a3b8'}}>Email Us</span><br/><strong style={{color: 'white'}}>spe@sahpl.com</strong></div>
+                <div style={{ fontSize: '0.8rem', lineHeight: '1.4' }}><span style={{color: '#94a3b8'}}>Email Us</span><br/><strong style={{color: 'white'}}>Spe.mktg@gmail.com</strong></div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <div className="circle-icon" style={{ width: '36px', height: '36px', borderRadius: '50%', background: '#1e293b', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#3b82f6', flexShrink: 0 }}><MapPin size={16}/></div>
-                <div style={{ fontSize: '0.8rem', lineHeight: '1.4' }}><span style={{color: '#94a3b8'}}>Our Office</span><br/><strong style={{color: 'white'}}>Sr. No. 14/1A +2B/2, Gujarwadi Road,<br/>Katraj, Pune - 411046 (India)</strong></div>
+                <div style={{ fontSize: '0.8rem', lineHeight: '1.4' }}><span style={{color: '#94a3b8'}}>Our Office</span><br/><strong style={{color: 'white'}}>S. P. Enterprises, Sr. No. 14/1A + 2B/2,<br/>Near Gujarwadi, Mangdewadi,<br/>Katraj, Pune 411046, Maharashtra</strong></div>
               </div>
             </div>
           </div>
@@ -514,9 +514,7 @@ export default function Home() {
             <div style={{ display: 'flex', gap: '1.5rem' }}>
               <Link href="#" style={{color: '#94a3b8', textDecoration: 'none'}}>Privacy Policy</Link>
               <Link href="#" style={{color: '#94a3b8', textDecoration: 'none'}}>Terms & Conditions</Link>
-              <Link href="#" style={{color: '#94a3b8', textDecoration: 'none'}}>Sitemap</Link>
             </div>
-            <div>Designed with <span style={{color:'#3b82f6'}}>💙</span> for a Smarter Industry</div>
           </div>
         </div>
       </footer>
